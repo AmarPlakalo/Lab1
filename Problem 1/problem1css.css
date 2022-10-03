@@ -1,0 +1,27 @@
+.flexible_grid 
+{
+  display: flex; 
+  flex-wrap: wrap;
+}
+
+.cells_in_flexible_grid 
+{
+  flex-grow: 0.25;
+  border: 1px solid black;
+}
+
+@media (max-width: 720px) 
+{
+  .cells_in_flexible_grid 
+  {
+    width: calc(50% - 2px)
+  }
+}
+
+@media (max-width: 360px) 
+{
+  .cells_in_flexible_grid 
+  {
+    width: calc(100% - 2px)
+  }
+}
