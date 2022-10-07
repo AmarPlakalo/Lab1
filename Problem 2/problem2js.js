@@ -31,7 +31,7 @@ function button_action()
 	input_2.className = "button";
 	input_2.value = "Delete Note";
 	input_2.onclick = function () {
-	node.remove();
+		node.remove();
 	};
 	
 	node.innerHTML = title_content + "<br><br><br>" + note_content;
